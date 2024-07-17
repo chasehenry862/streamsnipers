@@ -1,0 +1,14 @@
+<br />
+<h1 class="center standardfont">{{movieTitle}} Recommendations</h1>
+<br />
+<div class="container standardfont">
+    <div class="card-deck justify-content-center">
+        <div *ngFor="let recommend of movieSimilar">
+            <div class="card noBorder" style="max-width: 18rem;">
+                <app-list-recommend [id]="recommend.id"> 
+                </app-list-recommend>
+                
+            </div>
+        </div>
+    </div>
+</div>

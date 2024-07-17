@@ -1,0 +1,14 @@
+<br />
+<h1 class="standardfont">Favorites</h1>
+<br />
+<div class="container standardfont">
+    <div class="card-deck justify-content-center">
+        <div *ngFor="let favorite of listOfFavorites">
+            <div class="card noBorder" style="max-width: 18rem;">
+                <app-favorite-item [imdbId]="favorite.imdbId" [favoriteListId]="favorite.favoriteListId">
+                </app-favorite-item>
+                
+            </div>
+        </div>
+    </div>
+</div>
